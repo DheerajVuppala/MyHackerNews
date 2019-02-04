@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/story_title"
+                style="@style/title_text"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Title is dodda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+        <TextView
+                android:id="@+id/story_time"
+                android:layout_below="@+id/story_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/body1_text"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Time"/>
+
+        <TextView
+                style="@style/body1_text"
+                android:id="@+id/story_by"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/story_time"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:text="By: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                style="@style/body1_text"
+                android:id="@+id/story_type"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/story_time"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:text="StoryType "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                style="@style/body1_text"
+                android:id="@+id/story_descents"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/story_type"
+                android:textColor="@color/black"
+                android:text="Descendants "
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                style="@style/caption_text"
+                android:id="@+id/story_score"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/story_descents"
+                android:textColor="@color/black"
+                android:text="Score "
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                style="@style/caption_text"
+                android:id="@+id/story_comments_header"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/story_score"
+                android:textColor="@android:color/darker_gray"
+                android:text="Comments are: "
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/story_comments_header"
+                android:id="@+id/comments_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyHackerNews</string>
+    <string name="common_network_error">Somewent Wrong, Check your internet settings ...</string>
+    <string name="story_by">By: %s</string>
+    <string name="story_time">Time: %s</string>
+    <string name="story_type">StoryType: %s</string>
+    <string name="story_kids">Kids: %s</string>
+    <string name="story_descendants">Descendants: %d</string>
+    <string name="story_score">Score: %d</string>
+</resources>
